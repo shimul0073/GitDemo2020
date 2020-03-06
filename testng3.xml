@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Loan Department">
+<listeners>
+		<listener class-name="com.testng.ListnerDemo" />
+	</listeners>
+	<test thread-count="5" name="Regression">
+		<groups>
+			<run>
+				<include name="Smoke" />
+			</run>
+		</groups>
+		<classes>
+			<class name= "com.testng.day1" />
+			<class name="com.testng.day2" />
+			<class name="com.testng.day3" />
+			<class name="com.testng.day4" />
+		</classes>
+	</test> <!-- Test -->
+</suite> <!-- Suite -->

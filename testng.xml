@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Loan Department">
+	
+	<parameter name="URL" value="shimulacademy.com" />
+	<parameter name="PASS" value="shimul is a good boy" />
+	<test thread-count="5" name="Personal loan">
+		<classes>
+			<class name="com.testng.day1">
+				<methods>
+					<include name="demo" />
+				</methods>
+			</class>
+			<class name="com.testng.day2" />
+			<class name="com.testng.day4" />
+		</classes>
+	</test> <!-- Test -->
+	<test thread-count="5" name="Car loan">
+		<classes>
+			<class name="com.testng.day3">
+				<methods>
+					<exclude name="API.*" />
+				</methods>
+			</class>
+		</classes>
+	</test> <!-- Test -->
+
+
+</suite> <!-- Suite -->

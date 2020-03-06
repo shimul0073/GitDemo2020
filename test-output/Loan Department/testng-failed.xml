@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Loan Department]">
+  <parameter name="PASS" value="shimul is a good boy"/>
+  <parameter name="URL" value="shimulacademy.com"/>
+  <test thread-count="5" name="Personal loan(failed)">
+    <classes>
+      <class name="com.testng.day4">
+        <methods>
+          <include name="LoginAPIHomeLoan"/>
+        </methods>
+      </class> <!-- com.testng.day4 -->
+    </classes>
+  </test> <!-- Personal loan(failed) -->
+</suite> <!-- Failed suite [Loan Department] -->
